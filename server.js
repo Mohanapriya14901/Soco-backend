@@ -12,7 +12,7 @@ app.use(cors());
 
 // Routes
 const authRoutes = require("./routes/authRoutes");
-app.use("/api/user", authRoutes); // 👈 matches frontend baseURL
+app.use("/api/auth", authRoutes); // ✅ updated prefix
 
 // MongoDB Connection
 mongoose
